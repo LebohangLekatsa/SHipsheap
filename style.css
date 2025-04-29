@@ -134,7 +134,10 @@ a {
 }
 .second-header p:hover {
    padding: 20px;
-   
+   border: 2px solid black;
+}
+.second-header p:active {
+   border-style: dotted;
 }
 
 .third-header {
@@ -154,8 +157,13 @@ a {
 }
 .third-header p:hover {
    padding: 16px;
+   background: black;
 }
 
+.third-header p:active {
+   padding: 16px;
+   background: black;
+}
 @media (max-width: 944px) {
    .left-section {
       display: none;
