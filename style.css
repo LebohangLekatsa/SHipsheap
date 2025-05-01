@@ -59,6 +59,7 @@ body {
 
  .content-grid {
    border: 20px solid silver;
+   background-color: black;
    margin-top: 40px;
    border-radius: 10px;
    display: grid;
@@ -67,6 +68,7 @@ body {
  .content-box { 
    margin-top: 30px;
    padding: 20px;
+   background-color: black;
    border-radius: 5px;
     display: flex;
    flex-direction: column;
@@ -130,11 +132,12 @@ a {
    padding: 18px;
    color: white;
    font-weight: 600;
+   border-radius: 5px;
    transition: 0.4s padding;
 }
 .second-header p:hover {
    padding: 20px;
-   border: 2px solid black;
+   background-color: #777;
 }
 .second-header p:active {
    border-style: dotted;
