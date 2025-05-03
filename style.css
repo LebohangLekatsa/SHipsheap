@@ -30,14 +30,13 @@ body {
     cursor: pointer;
     padding: 20px;
     background-color: orange;
-    text-align: center;
- }
+    align-items: center;
+    }
  .logo:active {
     border-style: dotted;
  }
 
  .left-section {
-    
     width: 300px;
     background-color: orange;
     display: flex;
@@ -58,7 +57,7 @@ body {
 
 
  .content-grid {
-   border: 20px solid silver;
+   border: 20px solid white;
    background-color: black;
    margin-top: 40px;
    border-radius: 10px;
@@ -86,7 +85,7 @@ body {
  }
   
 .info-box {
-   border: 5px solid grey;
+   border: 5px solid white;
    border-radius: 10px;
    padding: 20px;
    margin-top: 10px;
@@ -201,7 +200,7 @@ a {
    }
 
    .content-grid {
-      border: 20px solid silver;
+      border: 20px solid white;
       margin-top: 40px;
       border-radius: 10px;
       display: flex;
