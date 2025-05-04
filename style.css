@@ -12,9 +12,10 @@
     background-color: rgb(251, 251, 251);
     border: 1px solid #777;
     border-radius: 10px;
+    position: relative;
 }
 body {
-    background-color: orange;
+   background-color: orange;
 }
  nav {
     padding: 10px;
@@ -36,13 +37,15 @@ body {
     border-style: dotted;
  }
 
- .left-section {
-    width: 300px;
+ nav .left-section {
+   max-width: 300px;
     background-color: orange;
     display: flex;
     align-items: center;
     gap: 20px;
+    position: relative;
  }
+
  .left-section p {
     cursor: pointer;
     font-weight: 600;
@@ -163,11 +166,7 @@ a {
    padding: 16px;
    background: black;
 }
-@media (max-width: 944px) {
-   .left-section {
-      display: none;
-   }
-}
+
 @media (max-width: 832px) {
    .content-grid {
       border: 20px solid silver;
@@ -181,6 +180,19 @@ a {
 @media (max-width: 700px) {
    nav {
       flex-direction: column;
+   }
+ 
+   nav .left-section {
+      width: 100%;
+      display: flex;
+     justify-content: space-between;
+      z-index: 300;
+   }
+   .left-section a p {
+      margin-top: 5px;
+   }
+   .logo {
+      text-align: center;
    }
    .second-header {
       display: grid;
