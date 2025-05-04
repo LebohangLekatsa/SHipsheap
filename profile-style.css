@@ -54,10 +54,7 @@ border-bottom: 3px solid #2776a3;
 }
 
 @media (max-width: 995px){
-  .home {
-    display: flex;
-    flex-direction: column;
-  }
+
 
   nav {
     display: none;
@@ -68,11 +65,17 @@ border-bottom: 3px solid #2776a3;
     justify-content: center;
     align-items: top;
     gap: 8rem;
-
     background-color: orange;
     margin-top: 60px;
 }
+
+.home-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   .home-img-box img{
+    position: relative;
     margin-top: 40px;
     width: 15rem;
     height: 15rem;
@@ -238,49 +241,62 @@ section {
 
 
 
-.body-slider-container{
-    background-color: white;
-    margin: 0px 30px;
-    padding: 20px;
-    margin-bottom: 15px;
-  }
-  .body-slider-container .products{
-      display: flex; 
-      overflow-x: auto;
-      gap: 20px;
-      margin-top: 10px;
-  }
-  .body-slider-container .products::-webkit-scrollbar {
-     display: none;
-  }
-  .body-slider-container .products img{
-      max-width: 200px;
-      max-height: 200px;
-  }
-  
-  .body-slider-with-price{
+  .body-with-price{
       background-color: white;
       margin: 0px 30px;
       padding: 20px;
       margin-bottom: 15px;
+      border-radius: 10px;
   }
 
-  .body-slider-with-price h2 {
+  .body-with-price h2 {
     color: rgb(35, 35, 35);
   }
 
-  .body-slider-with-price .products{
+  .body-with-price .products{
       display: flex;
       overflow-x: auto;
       gap: 10px;
       margin-top: 10px;
   }
-  
-  .body-slider-with-price .products::-webkit-scrollbar{
-      display: none;
-  }
-  
-  
+@media (max-width: 996px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 766px) {
+
+    .product-img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .body-with-price .products{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .home-img-box img{
+        position: relative;
+        margin-top: 40px;
+        width: 24rem;
+        height: 24rem;
+        border-radius: 50%;
+        opacity: 0.7;
+        transition: 0.6s ease-in-out;
+        cursor: pointer;
+      }
+    
+    .products {
+        margin-top: 20px;
+    } 
+}
+  .body-with-price .products::-webkit-scrollbar{
+    display: none;
+}
+
   .product-card{
       display: flex;
       flex-direction: column;
@@ -318,3 +334,5 @@ section {
       font-size: 15px;
       font-weight: 400;
   }
+
+  
