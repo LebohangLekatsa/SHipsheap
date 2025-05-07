@@ -161,6 +161,12 @@ section {
     font-size: 40px ;
 }
 
+.service-span {
+    color: yellow;
+  }
+  .available-span {
+    background-color: yellowgreen;
+  }
 
 
 .home-content-box{
@@ -239,100 +245,115 @@ section {
     box-shadow: 0px 0px 25px #777;
 }
 
-
-
-  .body-with-price{
-      background-color: white;
-      margin: 0px 30px;
-      padding: 20px;
-      margin-bottom: 15px;
-      border-radius: 10px;
-  }
-
-  .body-with-price h2 {
-    color: rgb(35, 35, 35);
-  }
-
-  .body-with-price .products{
-      display: flex;
-      overflow-x: auto;
-      gap: 10px;
-      margin-top: 10px;
-  }
 @media (max-width: 996px) {
     .home {
         display: flex;
         flex-direction: column;
     }
 }
-@media (max-width: 766px) {
 
-    .product-img-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .body-with-price .products{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-    .home-img-box img{
-        position: relative;
-        margin-top: 40px;
-        width: 24rem;
-        height: 24rem;
-        border-radius: 50%;
-        opacity: 0.7;
-        transition: 0.6s ease-in-out;
-        cursor: pointer;
-      }
-    
-    .products {
-        margin-top: 20px;
-    } 
-}
-  .body-with-price .products::-webkit-scrollbar{
-    display: none;
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-  .product-card{
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      min-width: 210px;
-      background-color: #fbfbfb;
-  }
-  .product-card img{
-      width: 110px;
-      margin: 0px 50px;
-  }
-  .product-offer p{
-  background-color: #be0b3b;
-  color: white;
-  display: inline-block;
-  padding: 2px 5px;
-  margin: 8px 0px;
-  font-size: 13px;
-  }
-  
- .product-price span {
-      color: #be0b3b;
-      font-size: 12px;
-      text-decoration: line-through;
-  }
+/* Product Card Styles */
+.product-card {
+    width: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+}
 
-  .product-price {
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0px;
+}
+.product-price {
     color: black;
-    font-size: 17px;
+}
+.product-price span {
+    color: black;
+    font-weight: 300;
+}
+
+.add-to-cart:hover {
+    background-color: #2980b9;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+}
+
+
+
+@media (max-width: 1016px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-
-
-  .product-card h4{
-      color: #525252;
-      font-size: 15px;
-      font-weight: 400;
-  }
-
-  
+}
+@media (max-width: 915px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      } 
+}
+@media (max-width: 628px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+      } 
+}

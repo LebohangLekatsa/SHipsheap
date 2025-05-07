@@ -61,7 +61,7 @@ body {
 
  .content-grid {
    border: 20px solid white;
-   background-color: black;
+   background-color: orange;
    margin-top: 40px;
    border-radius: 10px;
    display: grid;
@@ -70,7 +70,7 @@ body {
  .content-box { 
    margin-top: 30px;
    padding: 20px;
-   background-color: black;
+   background-color: orange;
    border-radius: 5px;
     display: flex;
    flex-direction: column;
@@ -136,15 +136,17 @@ a {
 }
 .second-header p:hover {
    padding: 20px;
-   background-color: #777;
+   background-color: orange;
 }
 .second-header p:active {
    border-style: dotted;
+   color: orange;
+   background-color: white;
 }
 
 .third-header {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
    gap: 20px;
    border-bottom: 1px solid gray;
 }
