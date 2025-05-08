@@ -357,3 +357,13 @@ section {
         grid-template-columns: 1fr ;
       } 
 }
+
+.product-price .save-deal { 
+    font-size: 12px;
+    text-decoration: line-through;
+    color: red;
+}
+
+.special-day {
+    background-color: pink;
+} 
