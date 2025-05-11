@@ -1,0 +1,121 @@
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Product Card Styles */
+.product-card {
+    width: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0px;
+}
+.product-price {
+    color: black;
+}
+.product-price span {
+    color: black;
+    font-weight: 300;
+}
+
+.add-to-cart:hover {
+    background-color: #2980b9;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+}
+
+
+
+@media (max-width: 1016px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .service-grid {
+    display: flex;
+    flex-direction: column;
+}
+}
+@media (max-width: 915px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      } 
+
+}
+@media (max-width: 628px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+      } 
+   
+}
+
+.product-price .save-deal { 
+    font-size: 12px;
+    text-decoration: line-through;
+    color: red;
+}
+
+.special-day {
+    background-color: pink;
+} 
+
