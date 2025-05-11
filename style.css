@@ -58,6 +58,28 @@ body {
     transition: 0.4s;
  }
 
+ .button-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px 0px;
+ }
+
+ button {
+   padding: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;   
+   border: 2px solid #777;
+   background-color: orange;
+   border-radius: 40px;
+   cursor: pointer;
+ }
+ button:hover {
+   transform: scale(1.08);
+   background-color: #2776a3;
+   color: white;
+   box-shadow: 0px 0px 25px #777;
+ }
 
  .content-grid {
    border: 20px solid white;
@@ -85,6 +107,10 @@ body {
  }
  .content-box div:hover img {
    transform: scale(1.1);
+ }
+
+ .body-items p{
+  margin-left: 10px;
  }
   
 .info-box {

@@ -344,18 +344,24 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .service-grid {
+    display: flex;
+    flex-direction: column;
+}
 }
 @media (max-width: 915px) {
     .product-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
       } 
+
 }
 @media (max-width: 628px) {
     .product-grid {
         display: grid;
         grid-template-columns: 1fr ;
       } 
+   
 }
 
 .product-price .save-deal { 
@@ -367,3 +373,62 @@ section {
 .special-day {
     background-color: pink;
 } 
+
+
+
+/* Interior design */
+.service-grid {
+    display: flex;
+    justify-content: space-between;
+}
+.comparison-container {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.before-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.before-section img {
+    height: 300px;
+}
+
+.after-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.after-section img {
+    height: 300px;
+}
+
+.after-item {
+    flex: 1;
+    text-align: center;
+}
+
+.comparison-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.caption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+}
