@@ -432,3 +432,9 @@ section {
     font-style: italic;
     color: #555;
 }
+/* Makakarane bold */
+
+.bold-class {
+    font-weight: bold;
+    color: black;
+}

@@ -213,6 +213,8 @@ a {
    nav .left-section {
       width: 100%;
       display: flex;
+      max-width: none;
+      align-items: center;
      justify-content: space-between;
       z-index: 300;
    }
