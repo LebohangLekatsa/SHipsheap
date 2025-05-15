@@ -119,3 +119,35 @@
     background-color: pink;
 } 
 
+.price-container {
+    margin-bottom: 15px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.price {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price-label {
+    font-size: 13px;
+    color: #000;
+    width: 80px;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+} 
+
+.member-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
