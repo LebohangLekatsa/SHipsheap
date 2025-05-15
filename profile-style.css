@@ -253,13 +253,13 @@ section {
 }
 
 
-
+/* Product Card Styles */
 .product-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-/* Product Card Styles */
+
 .product-card {
     width: 260px;
     border-radius: 10px;
@@ -306,8 +306,7 @@ section {
     font-weight: bold;
     color: #2ecc71;
     margin-top: 20px;
-    position: absolute;
-    bottom: 0px;
+  
 }
 .product-price {
     color: black;
@@ -317,9 +316,6 @@ section {
     font-weight: 300;
 }
 
-.add-to-cart:hover {
-    background-color: #2980b9;
-}
 
 .sale-badge {
     position: absolute;
@@ -438,3 +434,64 @@ section {
     font-weight: bold;
     color: black;
 }
+
+
+
+
+/* Beans & Makarane style */
+    
+      .price-container {
+            margin-bottom: 15px;
+        }
+  
+       .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } 
+
+        .price {
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .price-label {
+            font-size: 13px;
+            color: #000;
+            width: 80px;
+        }
+        
+        .current-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        } 
+        
+        .member-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+        
+     /*   .original-price {
+            font-size: 16px;
+            color: #999;
+            text-decoration: line-through;
+            margin-left: 8px;
+        }
+        
+       .add-to-cart {
+            width: 100%;
+            padding: 10px;
+            background-color: #2196f3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        } 
+        
+        .add-to-cart:hover {
+            background-color: #0d8bf2;
+        } */
